@@ -9,7 +9,8 @@ public class HeiController {
 
     @GetMapping("/")
     public String hei(String navn){
-        return "Hei Verden " + navn + "!";
+        int lengde= navn.length();
+        return "Hei Verden " + navn + "! Navnet ditt har " + lengde + " bokstaver";
     }
 
 }
